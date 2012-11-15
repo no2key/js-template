@@ -1,0 +1,45 @@
+@import "reset.css";
+
+/* 余果 http://yuguo.us
+-------------------------------------------------------------------------------*/
+
+/* demo
+ *---------------------------------------------------------------------------------*/
+body {padding:20px;}
+
+/* 通用mod_box
+ *---------------------------------------------------------------------------------*/
+.mod_box {border:1px solid #7c97c7; border-radius: 5px;}
+.mod_box .box_hd {height:26px;background-color: #e6ecf8;padding:0 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.mod_box .box_hd h2 {color:#000;font-size:14px;line-height:26px;}
+.mod_box .box_bd {padding:5px;}
+.mod_box .box_ft {height:30px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;text-align:right;padding:0 5px;
+	background-color: #ffffff;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e5ecf9)); /* Safari 4+, Chrome */
+ background-image: -webkit-linear-gradient(top, #ffffff, #e5ecf9); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+ background-image:    -moz-linear-gradient(top, #ffffff, #e5ecf9); /* Firefox 3.6-15 */
+ background-image:      -o-linear-gradient(top, #ffffff, #e5ecf9); /* Opera 11.10-12.00 */
+ background-image:         linear-gradient(to bottom, #ffffff, #e5ecf9); /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+/* 联系人列表模块
+ *---------------------------------------------------------------------------------*/
+.mod_contact {width:276px;}
+.mod_contact ul {list-style: none;}
+.mod_contact ul li {height:20px;position:relative;line-height:20px;}
+.mod_contact ul .user_name {width:80px;float:left;color:#656565;display:block;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal;}
+.mod_contact ul .user_info {overflow:hidden;display:block;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal;}
+
+/* 联系人详情气泡
+ *---------------------------------------------------------------------------------*/
+.mod_contact .card_pop {position:absolute;left:-5px;top:0;width:276px;z-index: 10;}
+.mod_contact .card_pop .card_pop_hd {border-top:1px solid #9c9c9c;border-bottom:1px solid #9c9c9c;background-color: #efefef;width:80px;
+	position:absolute;left:0;top:0;z-index: 11;height:18px;}
+.mod_contact .card_pop .card_pop_hd h3 {padding:0 5px;display:block;white-space:nowrap;width:100%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal;}
+.mod_contact .card_pop .card_pop_bd {border:1px solid #9c9c9c;width:191px;padding-left:5px;position:absolute;right:-1px;top:0;background-color: #efefef;}
+.mod_contact .card_pop .card_detail {width:130px;line-height:18px;}
+.mod_contact .card_pop .card_detail p {display:block;word-break: break-all;word-wrap: break-word;}
+
+.mod_contact .card_pop .card_avatar {height:45px;width:45px;position:absolute;right:5px;top:5px;}
+
+
