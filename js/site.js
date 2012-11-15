@@ -16,7 +16,7 @@ $('#user_list').append(html);
 
 //列表绑定hover事件
 $('#user_list li').live('hover',function(e){
-
+        $(this).css('z-index','5');
         var user_id = $(this).data("id");
 
         var source_pop = $("#card-pop-template").html();
@@ -28,6 +28,7 @@ $('#user_list li').live('hover',function(e){
 
 }).live('mouseleave',function(){
     $('#user_list .card_pop').remove();
+    $(this).css('z-index','0');
 });
 
 //选择Email地址还是号码

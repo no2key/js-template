@@ -26,17 +26,18 @@ body {padding:20px;}
  *---------------------------------------------------------------------------------*/
 .mod_contact {width:276px;}
 .mod_contact ul {list-style: none;}
-.mod_contact ul li {height:20px;position:relative;line-height:20px;}
+.mod_contact ul li {height:20px;border:0 none;position:relative;line-height:20px;*zoom:1;}
 .mod_contact ul .user_name {width:80px;float:left;color:#656565;display:block;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal;}
-.mod_contact ul .user_info {overflow:hidden;display:block;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal;}
+.mod_contact ul .user_info {float:left;width:185px;display:block;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal;}
 
 /* 联系人详情气泡
  *---------------------------------------------------------------------------------*/
-.mod_contact .card_pop {position:absolute;left:-5px;top:0;width:276px;z-index: 10;}
+.mod_contact .card_pop {position:absolute;left:-5px;top:0px;width:276px;z-index: 10;height:0;width:100px;}
 .mod_contact .card_pop .card_pop_hd {border-top:1px solid #9c9c9c;border-bottom:1px solid #9c9c9c;background-color: #efefef;width:80px;
-	position:absolute;left:0;top:0;z-index: 11;height:18px;}
-.mod_contact .card_pop .card_pop_hd h3 {padding:0 5px;display:block;white-space:nowrap;width:100%;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal;}
-.mod_contact .card_pop .card_pop_bd {border:1px solid #9c9c9c;width:191px;padding-left:5px;position:absolute;right:-1px;top:0;background-color: #efefef;}
+	position:absolute;left:0;top:-1;z-index: 11;height:18px;}
+.mod_contact .card_pop .card_pop_hd h3 {padding:0 5px;display:block;white-space:nowrap;width:100%;overflow:hidden;
+	-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal;}
+.mod_contact .card_pop .card_pop_bd {border:1px solid #9c9c9c;width:191px;padding-left:5px;position:absolute;left:79px;top:0;background-color: #efefef;}
 .mod_contact .card_pop .card_detail {width:130px;line-height:18px;}
 .mod_contact .card_pop .card_detail p {display:block;word-break: break-all;word-wrap: break-word;}
 
